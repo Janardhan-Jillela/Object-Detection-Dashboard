@@ -158,9 +158,11 @@ python "jana pyhton.py"
 
 ## 👤 Author
 
+
 **Janardhan Jillela**
 GitHub: [@Janardhan-Jillela](https://github.com/Janardhan-Jillela)
-
+**Pujala Venkata Swathi**
+GitHub: [@Swathi1596Srinivas](https://github.com/Swathi1596Srinivas).
 ---
 
 ## 📜 License
