@@ -1,0 +1,189 @@
+/* =============================================
+   Object Detection Dashboard - Custom Theme
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main background */
+.stApp {
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+}
+
+/* Header */
+.main-header {
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(16, 185, 129, 0.1));
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.main-header h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6366f1, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.4rem;
+}
+
+.main-header p {
+    color: #94a3b8;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
+    border-right: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+section[data-testid="stSidebar"] .stMarkdown h2,
+section[data-testid="stSidebar"] .stMarkdown p {
+    color: #e2e8f0 !important;
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+/* Metrics */
+[data-testid="stMetric"] {
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    backdrop-filter: blur(8px);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #94a3b8 !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #6366f1 !important;
+    font-weight: 700 !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background: rgba(17, 24, 39, 0.8);
+    border-radius: 10px;
+    padding: 4px;
+    gap: 4px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    color: #94a3b8;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    background: rgba(30, 41, 59, 0.6);
+    border: 2px dashed rgba(99, 102, 241, 0.4);
+    border-radius: 12px;
+    padding: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: rgba(99, 102, 241, 0.8);
+}
+
+/* Sliders */
+.stSlider > div > div > div > div {
+    background: linear-gradient(135deg, #6366f1, #10b981) !important;
+}
+
+/* Select boxes */
+.stSelectbox > div > div {
+    background: rgba(30, 41, 59, 0.8) !important;
+    border: 1px solid rgba(99, 102, 241, 0.3) !important;
+    color: #e2e8f0 !important;
+    border-radius: 8px !important;
+}
+
+/* Progress bar */
+.stProgress > div > div > div > div {
+    background: linear-gradient(135deg, #6366f1, #10b981) !important;
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-top-color: #6366f1 !important;
+}
+
+/* Success / Info / Error alerts */
+.stSuccess, .stInfo, .stWarning, .stError {
+    border-radius: 10px !important;
+}
+
+/* Images */
+.stImage img {
+    border-radius: 10px;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* Download button */
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.stDownloadButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 3px;
+}
